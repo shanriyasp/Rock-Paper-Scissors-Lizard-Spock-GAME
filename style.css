@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">');
+
+:root{
+    --text-color: #130b0c;
+    --background-color: #b45798;
+    --my-color:  #fddac5;
+    --second-color:#7c0017;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body{
+    font-family: 'Pangolin', cursive ;
+    background-image: url(image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh ;
+    width: 100vw;
+}
+ main{
+     min-height:32rem;
+     min-width:55rem;
+     background-color: var(--my-color);
+     border-radius: 50px;
+     background-image:url(images.jpg);
+     background-size: cover;
+     height: 100vh;
+     width: 100vh;
+     box-shadow:  10px 10px 20px #0e0808, -10px -10px 20px #110808;
+    padding:2rem;
+ }
+
+ header{
+     height: 13rem;
+     display: flex;
+     justify-content: space-between;
+     color: whitesmoke;
+ }
+
+ header h1{
+     display: flex;
+     flex-direction: column;
+     font-size: 1.4rem;
+ }
+
+ header p{
+     font-size: 1.4rem;
+ }
+ header g{
+     font-size: 1.8rem;
+ }
+
+ .hands{
+    height: 13rem;
+    display: flex;
+    justify-content:center;
+    justify-content:space-evenly;
+    margin-bottom: 1rem;
+ }
+ 
+ .hands button{
+     width:6rem;
+     height:6rem;
+     border-radius: 50%;
+     font-size: 2.5rem ;
+     background-color:var(--second-color);
+     color: orangered ;
+     border-radius:2.5rem;
+     cursor: pointer;
+     transition:all 0.2s ease-in-out;
+ }
+
+ .hands button:hover{
+    transform:translateX(10px);
+    transform:scale(0.7);
+    background-color: palegreen;
+    color: var(--text-color);
+ }
+
+ .result{
+     text-align: center;
+     font-size: 1.6rem;
+     color:turquoise;
+ }
+
+ .result button{
+    padding:0.5rem 1.5rem;
+    background-image:url(start.jpg);
+    width: 12%;
+    height: 85px;
+    margin: 0.5rem auto;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: all 0.2s;
+ }
+
+ .result button:hover{
+    transform:translateY(10px);
+    transform:scale(0.7);
+ }
+
+ .result p{
+     margin-bottom: 0.5rem;
+     margin-top: 0.5rem ;
+ }
+
+ .result-message{
+     background-image:url(win.jpg);
+     background-repeat: no-repeat;
+     width: 22%;
+     height: 4rem;
+     margin: 1.5rem auto;
+     font-size: 1.6rem;
+     font-weight: bolder;
+ }
+
+ .hidden{
+     display: none;
+ }
+
